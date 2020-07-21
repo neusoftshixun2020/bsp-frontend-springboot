@@ -64,15 +64,8 @@
       </div>
 
       <!--支付弹窗-->
-      <el-dialog title='Payment' :visible.sync = 'visible' width = '40%' :close-on-lick-modal = 'false'>
+      <el-dialog title='Payment' :visible.sync = 'visible' width = '30%' :close-on-lick-modal = 'false'>
         <el-form :model='payData'  ref='depositData' :rules="ruleValidate" label-width='0px' class=''>
-
-          <el-form-item label="Payment Method" label-width="130px"  prop='sid'>
-            <el-col :span="8">
-              <el-radio v-model="ruleForm.payment_method" label="1">My Wallet</el-radio>
-              <el-radio v-model="ruleForm.payment_method" label="2">AliPay</el-radio>
-            </el-col>
-          </el-form-item>
 
           <el-form-item label="Account Name" label-width="130px"  prop='sid'>
             <el-input v-model="payData.WalletAccount.account_name" style="width:200px" />
