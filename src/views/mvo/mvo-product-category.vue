@@ -104,7 +104,7 @@
 
         <el-form-item label="Main Pricture" label-width="130px">
           <el-upload
-            action="http://localhost:8088/image/uploadImage"
+            action="http://49.232.199.44:8088/image/uploadImage"
             list-type="picture-card"
             :on-preview="handlePictureCardPreview"
             :on-success="handleUploadSuccess"
@@ -397,7 +397,7 @@
             })
           return (a || b)
         })
-    
+
       }
     }
 

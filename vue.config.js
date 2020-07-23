@@ -38,15 +38,15 @@ module.exports = {
       warnings: false,
       errors: true
     },
-  proxy: {
-    [process.env.VUE_APP_BASE_API]:{
-      target: process.env.VUE_APP_BASE_API,
-      changeOrigin: true,
-      pathRewrite: {
-        ['^' + process.env.VUE_APP_BASE_API]: ''
+    proxy: {
+      [process.env.VUE_APP_BASE_API]:{
+        target: process.env.VUE_APP_BASE_API,
+        changeOrigin: true,
+        pathRewrite: {
+          ['^' + process.env.VUE_APP_BASE_API]: ''
+        }
       }
     }
-  },
     // before: require('./mock/mock-server.js')
   },
   configureWebpack: {

@@ -85,7 +85,7 @@
 
     <el-form-item label="Flow Picture" label-width="130px" prop='image_url'>
           <el-upload
-            action="http://localhost:8088/image/uploadImage"
+            action="http://49.232.199.44:8088/image/uploadImage"
             list-type="picture-card"
             :on-preview="handlePictureCardPreview"
             :on-success="handleUploadSuccess"
